@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns:idk="">
+<head>
+    <meta charset="utf-8"/>
+    <h1 id="title">Форма регистрации</h1>
+    <p id="description">Спасибо вам, что помогаете нам стать лучше</p>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+<body>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Имя<input id="name" name="name" required type="text" placeholder="Введите свое имя"/></label>
+        <label id="email-label" for="email">Электронная почта<input id="email" name="email" required type="email" placeholder="Введите свою электронную почту"></label>
+        <label id="number-label" for="age">Возраст
+            (необязательно)<input id="age" type="number" name="age" min="10" max="99" placeholder="Возраст"></label>
+        <label for="dropdown">Кем вы сейчас являетесь?
+            <select id="dropdown">
+                <option value="">(Выберите одно)</option>
+                <option value="1">Студент</option>
+                <option value="2">Работаю</option>
+                <option value="3">Учусь</option>
+                <option value="4">Предпочитаю не отвечать</option>
+                <option value="5">Другое</option>
+            </select>
+        </label>
+        <label>Порекомндуете наш сервис друзьям?</label>
+        <label for="recomend1"><input type="radio" name="recomend" class="inline" id="recomend1" value ="1">Конечно</label>
+        <label for="recomend2"><input type="radio" name="recomend" class="inline" id="recomend2" value ="2">Может быть</label>
+        <label for="recomend3"><input type="radio" name="recomend" class="inline" id="recomend3" value ="3">Не уверен</label>
+        <label>Что бы вы хотели улучшить? (Выберите несколько)</label>
+        <label for="better1"><input type="checkbox" name="better" class="inline" id="better1" value="1">Front-end проекты</label>
+        <label><input class="inline" id="better2" name="better" type="checkbox" value="2">Back-end проекты</label>
+        <label for="comments">Замечания или пожелания?</label>
+            <textarea id="comments" placeholder="Обожаю ваш сервис.." rows="3" cols="30"></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Подтвердить"/>
+</form>
+</body>
+</html>
