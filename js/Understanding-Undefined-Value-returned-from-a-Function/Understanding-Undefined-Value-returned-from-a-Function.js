@@ -12,4 +12,4 @@ function addFive() {
 addThree();
 addFive();
 
-console.log(123);
+console.log(sum);
